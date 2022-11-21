@@ -46,8 +46,8 @@ class _HomePageState extends State<HomePage> {
               controller: _mainScrollController,
               child: Column(
                 children: [
-                  TopFeaturedList(),
                   Container(
+                    padding: EdgeInsets.only(top: 17),
                     width: size.width,
                     height: size.height * 0.33,
                     child: StreamBuilder(
@@ -90,12 +90,6 @@ class _HomePageState extends State<HomePage> {
                           "Más recientes",
                           style: kAppTheme.textTheme.headline5,
                         ),
-                        TextButton(
-                            onPressed: () {},
-                            child: Text(
-                              "Ver todo",
-                              style: kAppTheme.textTheme.headline6,
-                            ))
                       ],
                     ),
                   ),

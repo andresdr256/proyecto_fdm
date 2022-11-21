@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:travelappui/components/rating,.dart';
 import 'package:travelappui/models/placesModel.dart';
 import 'package:travelappui/theme.dart';
 
@@ -20,18 +19,6 @@ Widget TravelCard(PlaceModel placeModel) => Container(
             ),
           ),
           Positioned(
-              right: 0,
-              top: 0,
-              child: IconButton(
-                  padding: EdgeInsets.zero,
-                  iconSize: 12,
-                  icon: Icon(
-                    Icons.favorite_rounded,
-                    size: 20,
-                    color: kAppTheme.highlightColor,
-                  ),
-                  onPressed: () {})),
-          Positioned(
             bottom: 0,
             left: 0,
             right: 0,
@@ -47,11 +34,6 @@ Widget TravelCard(PlaceModel placeModel) => Container(
                     placeModel.placeTitle,
                     style: kAppTheme.textTheme.subtitle1,
                   ),
-                  Row(
-                    children: [
-                     Rating(rating: placeModel.rating)
-                    ],
-                  )
                 ],
               ),
             ),

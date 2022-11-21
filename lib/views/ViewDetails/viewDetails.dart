@@ -1,7 +1,5 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:travelappui/components/rating,.dart';
 
 class ViewDetails extends StatefulWidget {
   @override
@@ -64,7 +62,7 @@ class _ViewDetailsState extends State<ViewDetails> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Mount Fuji", style: appTheme.textTheme.headline2),
+                    Text("Chris Rock World Tour", style: appTheme.textTheme.headline2),
                     SizedBox(height: 4),
                     Row(children: [
                       Icon(
@@ -73,12 +71,10 @@ class _ViewDetailsState extends State<ViewDetails> {
                       ),
                       SizedBox(width: 12),
                       Text(
-                        "Honshu, Japan",
+                        "Estadio Azteca, México",
                         style: appTheme.textTheme.caption,
                       )
                     ]),
-                    SizedBox(height: 8),
-                    Rating(rating: 4.5, color: Colors.black),
                     SizedBox(height: 18),
                     Row(
                       children: [
@@ -103,32 +99,19 @@ class _ViewDetailsState extends State<ViewDetails> {
                             onPressed: () {
                               addPackage();
                             }),
-                        SizedBox(width: 12),
-                        Icon(
-                          Icons.timer_rounded,
-                          color: appTheme.accentColor,
-                        ),
-                        SizedBox(
-                          width: 8,
-                        ),
-                        Text(
-                          "5 Days",
-                          style: appTheme.textTheme.caption
-                              .merge(TextStyle(color: appTheme.accentColor)),
-                        ),
                       ],
                     ),
                     SizedBox(
                       height: 8,
                     ),
                     Text(
-                      "Description",
+                      "Descripción",
                       style: appTheme.textTheme.headline3
                           .merge(TextStyle(color: Colors.black)),
                     ),
                     SizedBox(height: 12),
                     Text(
-                      "Enjoy your winter vacation with warmth and amazing sightseeing on the mountains. Enjoy the best experience with us!",
+                      "Chris Rock por primera vez en México con su World Tour 2022",
                       maxLines: 4,
                       overflow: TextOverflow.fade,
                       style: appTheme.textTheme.bodyText1,
@@ -140,13 +123,13 @@ class _ViewDetailsState extends State<ViewDetails> {
                         RichText(
                           text: TextSpan(children: [
                             TextSpan(
-                                text: "\$400",
+                                text: "\$1200",
                                 style: TextStyle(
                                     color: appTheme.accentColor,
                                     fontSize: 32,
                                     fontWeight: FontWeight.bold)),
                             TextSpan(
-                                text: "/Package",
+                                text: "MXN",
                                 style: TextStyle(
                                     color: appTheme.accentColor,
                                     fontSize: 16,
@@ -167,7 +150,7 @@ class _ViewDetailsState extends State<ViewDetails> {
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Text(
-                                "Book Now",
+                                "Reservar",
                                 style: appTheme.textTheme.headline3,
                               ),
                             ))

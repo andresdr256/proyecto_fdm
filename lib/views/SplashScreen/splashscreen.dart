@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travelappui/constants/colors.dart';
 import 'package:travelappui/routes/routes.dart';
-import 'package:travelappui/theme.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -69,8 +68,7 @@ class _SplashScreenState extends State<SplashScreen> {
                           fontSize: 18,
                           fontFamily: 'PlayFair',
                           fontWeight: FontWeight.bold)),
-                  child: Padding(
-                    padding: const EdgeInsets.all(12.0),
+                  child: Center(
                     child: Text("Entrar"),
                   ))
             ],

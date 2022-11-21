@@ -1,7 +1,5 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:travelappui/components/rating,.dart';
 import 'package:travelappui/models/placesModel.dart';
 import 'package:travelappui/theme.dart';
 
@@ -16,11 +14,8 @@ class FeaturedCard extends StatefulWidget {
 }
 
 class _FeaturedCardState extends State<FeaturedCard> {
-  double rating;
   String title;
-  bool favorite;
 
-  
 
   @override
   Widget build(BuildContext context) {
@@ -68,20 +63,13 @@ class _FeaturedCardState extends State<FeaturedCard> {
                             widget.placeModel.placeTitle,
                             style: kAppTheme.textTheme.headline3,
                           ),
-                          IconButton(
-                              icon: Icon(
-                                Icons.favorite_rounded,
-                                color: kAppTheme.primaryColor,
-                              ),
-                              onPressed: () {
-
-                              })
                         ],
                       ),
                     ),
                     Container(
-                      child: Row(
-                        children: [Rating(rating: widget.placeModel.rating)],
+                      child: Text(
+                        "Estadio Azteca",
+                        style: kAppTheme.textTheme.headline3,
                       ),
                     )
                   ],

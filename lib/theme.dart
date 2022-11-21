@@ -7,7 +7,7 @@ ThemeData kAppTheme = ThemeData(
   highlightColor: kHighlightColor,
   backgroundColor: kPrimaryColor,
   appBarTheme: AppBarTheme(
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.black,
     elevation: 0
   ),
   fontFamily: 'PlayFair',

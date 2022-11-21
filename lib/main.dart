@@ -4,6 +4,7 @@ import 'package:travelappui/routes/routes.dart';
 import 'package:travelappui/views/HomePage/state/homepageStateProvider.dart';
 import 'package:travelappui/views/SplashScreen/splashscreen.dart';
 import './constants/constants.dart';
+import 'package:your_splash/your_splash.dart';
 import './views/HomePage/homepage.dart';
 import './theme.dart';
 

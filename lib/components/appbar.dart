@@ -4,7 +4,7 @@ import 'package:travelappui/constants/constants.dart';
 AppBar HomeAppBar = AppBar(
   title: Center(
       child: Text(
-    "Discover",
+    "Proyecto Fundamentos Desarrollo Móvil",
     style: TextStyle(fontWeight: FontWeight.w900, letterSpacing: 2),
   )),
   leading: PopupMenuButton(
