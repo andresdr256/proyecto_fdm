@@ -6,7 +6,6 @@ import 'package:travelappui/components/featuredcard.dart';
 import 'package:travelappui/components/travelplacedart.dart';
 import 'package:travelappui/constants/colors.dart';
 import 'package:travelappui/theme.dart';
-import 'package:travelappui/views/HomePage/components/featurelist.dart';
 import 'package:travelappui/views/HomePage/state/homepageScrollListner.dart';
 import 'package:travelappui/views/HomePage/state/homepageStateProvider.dart';
 
