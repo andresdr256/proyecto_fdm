@@ -36,6 +36,7 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: kPrimaryColor,
       appBar: HomeAppBar,
       body: Container(
+        color: Colors.black87,
         height: size.height,
         width: size.width,
         child: Stack(
@@ -44,6 +45,7 @@ class _HomePageState extends State<HomePage> {
               controller: _mainScrollController,
               child: Column(
                 children: [
+                  // Lista Horizontal
                   Container(
                     padding: EdgeInsets.only(top: 17),
                     width: size.width,
@@ -79,6 +81,7 @@ class _HomePageState extends State<HomePage> {
                               });
                         }),
                   ),
+                  // Texto "Más recientes"
                   Container(
                     margin: EdgeInsets.only(left: 12, right: 12),
                     child: Row(
@@ -86,11 +89,12 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         Text(
                           "Más recientes",
-                          style: kAppTheme.textTheme.headline5,
+                          style: TextStyle(color: Colors.white, fontSize: 20),
                         ),
                       ],
                     ),
                   ),
+                  // Lista Vertical
                   Container(
                     margin: EdgeInsets.all(16),
                     child: StreamBuilder(

@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
           height: size.height * 0.55,
           color: Colors.black,
             child: Image(
-              image: AssetImage('assets/image/pic3.jpg'),
+              image: AssetImage('assets/image/FondoSplashScreen.jpg'),
               fit: BoxFit.cover,
             ),
         ),

@@ -36,6 +36,7 @@ class _ViewDetailsState extends State<ViewDetails> {
       floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
       body: Stack(
         children: [
+          // Imagen de concierto
           Positioned(
             left: 0,
             right: 0,
@@ -123,7 +124,7 @@ class _ViewDetailsState extends State<ViewDetails> {
                         RichText(
                           text: TextSpan(children: [
                             TextSpan(
-                                text: "\$1200",
+                                text: "\$1,200.00",
                                 style: TextStyle(
                                     color: appTheme.accentColor,
                                     fontSize: 32,
