@@ -17,59 +17,54 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Column(children: [
         Container(
           height: size.height * 0.55,
-          decoration: BoxDecoration(
-              color: Colors.grey,
-              borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(36),
-                  bottomRight: Radius.circular(36))),
-          child: ClipRRect(
-            borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(36),
-                  bottomRight: Radius.circular(36)),
+          color: Colors.black,
             child: Image(
               image: AssetImage('assets/image/pic3.jpg'),
               fit: BoxFit.cover,
             ),
-          ),
         ),
         Container(
+          color: Colors.black,
           height: size.height * 0.45,
           padding: EdgeInsets.all(32),
           alignment: Alignment.bottomCenter,
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.end,
             children: [
+              SizedBox(height: 30),
               Flexible(
                   child: Text(
-                "¡Adquiere tus boletos!",
-                maxLines: 2,
-                overflow: TextOverflow.clip,
-                style: appTheme.textTheme.headline1,
-              )),
-              SizedBox(height: 18),
+                    "¡Adquiere tus boletos!",
+                    maxLines: 2,
+                    overflow: TextOverflow.clip,
+                    style: TextStyle(fontSize: 20,color: Colors.white),
+                  )
+              ),
+              SizedBox(height: 50),
               Text(
-                "Vive la mejor experiencia con tus artistas favoritos, consigue aquí tus entradas para los mejores eventos.",
+                "Vive la mejor experiencia con tus artistas favoritos, reserva aquí tus entradas para los mejores eventos.",
                 maxLines: 4,
                 overflow: TextOverflow.fade,
-                style: appTheme.textTheme.bodyText1,
+                style: TextStyle(fontSize: 20, color: Colors.white),
               ),
-              SizedBox(height: 18),
+              SizedBox(height: 50),
               ElevatedButton(
                   onPressed: () {
                     Navigator.pushNamed(context, AppRoutes.ROUTE_Home);
                   },
                   style: ElevatedButton.styleFrom(
-                      primary: appTheme.accentColor,
+                    minimumSize: Size.fromHeight(50),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30)),
                       elevation: 0,
                       textStyle: TextStyle(
-                          fontSize: 18,
+                          fontSize: 22,
                           fontFamily: 'PlayFair',
                           fontWeight: FontWeight.bold)),
                   child: Center(
-                    child: Text("Entrar"),
+                    child: Text(
+                      "Entrar",
+                      style: TextStyle(color: Colors.black87,),
+                    ),
                   ))
             ],
           ),
