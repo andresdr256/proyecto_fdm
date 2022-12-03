@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:travelappui/components/appbar.dart';
+import 'package:travelappui/constants/constants.dart';
 import 'package:travelappui/components/featuredcard.dart';
 import 'package:travelappui/components/travelplacedart.dart';
-import 'package:travelappui/constants/colors.dart';
-import 'package:travelappui/theme.dart';
 import 'package:travelappui/views/HomePage/state/homepageScrollListner.dart';
 import 'package:travelappui/views/HomePage/state/homepageStateProvider.dart';
+
+import '../../routes/routes.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -34,7 +34,44 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       backgroundColor: kPrimaryColor,
-      appBar: HomeAppBar,
+      appBar: AppBar(
+        title: Center(
+            child: Text(
+          "Proyecto Fundamentos Desarrollo Móvil",
+          style: TextStyle(fontWeight: FontWeight.w900, letterSpacing: 2),
+        )),
+        leading: PopupMenuButton(
+          offset: Offset.fromDirection(2, 58),
+          onSelected: (value) {},
+          icon: Icon(Icons.menu),
+          itemBuilder: (context) {
+            return kAppBarMenuOptions
+                .map(
+                  (option) => PopupMenuItem(
+                    value: option,
+                    child: Container(
+                      width: 120,
+                      child: Text(
+                        option,
+                        style: TextStyle(color: Colors.black),
+                      ),
+                    ),
+                  ),
+                )
+                .toList();
+          },
+        ),
+        actions: [
+          IconButton(
+              icon: Icon(
+                Icons.account_circle,
+                size: 36,
+              ),
+              onPressed: () {
+                Navigator.pushNamed(context, AppRoutes.ROUTE_Login);
+              })
+        ],
+      ),
       body: Container(
         color: Colors.black87,
         height: size.height,
@@ -59,13 +96,14 @@ class _HomePageState extends State<HomePage> {
                                 width: 50,
                                 height: 50,
                                 child: CircularProgressIndicator());
-                          if (snapshot.connectionState == ConnectionState.waiting)
+                          if (snapshot.connectionState ==
+                              ConnectionState.waiting)
                             return Container(
                                 alignment: Alignment.center,
                                 width: 50,
                                 height: 50,
                                 child: CircularProgressIndicator());
-                                
+
                           return ListView.builder(
                               scrollDirection: Axis.horizontal,
                               shrinkWrap: true,
@@ -106,7 +144,8 @@ class _HomePageState extends State<HomePage> {
                                 width: 50,
                                 height: 50,
                                 child: CircularProgressIndicator());
-                          if (snapshot.connectionState == ConnectionState.waiting)
+                          if (snapshot.connectionState ==
+                              ConnectionState.waiting)
                             return Container(
                                 alignment: Alignment.center,
                                 width: 50,
