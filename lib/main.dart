@@ -7,19 +7,29 @@ import './constants/constants.dart';
 import 'package:your_splash/your_splash.dart';
 import './views/HomePage/homepage.dart';
 import './theme.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
-  
+bool credencialesOK;
+String usrCorreo;
+String usrPass;
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  credencialesOK = false;
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext csontext) {
-    return MultiProvider(providers: [
-      ChangeNotifierProvider(create: (_)=>HomePageStateProvider())
-    ],
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => HomePageStateProvider())
+      ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: kHomePageTitle,
@@ -31,4 +41,10 @@ class MyApp extends StatelessWidget {
   }
 }
 
+setCredencialesStatus(bool status) {
+  credencialesOK = status;
+}
 
+bool getCredencialesStatus() {
+  return credencialesOK;
+}

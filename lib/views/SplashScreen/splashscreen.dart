@@ -18,10 +18,10 @@ class _SplashScreenState extends State<SplashScreen> {
         Container(
           height: size.height * 0.55,
           color: Colors.black,
-            child: Image(
-              image: AssetImage('assets/image/FondoSplashScreen.jpg'),
-              fit: BoxFit.cover,
-            ),
+          child: Image(
+            image: AssetImage('assets/image/FondoSplashScreen.jpg'),
+            fit: BoxFit.cover,
+          ),
         ),
         Container(
           color: Colors.black,
@@ -33,12 +33,11 @@ class _SplashScreenState extends State<SplashScreen> {
               SizedBox(height: 30),
               Flexible(
                   child: Text(
-                    "¡Adquiere tus boletos!",
-                    maxLines: 2,
-                    overflow: TextOverflow.clip,
-                    style: TextStyle(fontSize: 20,color: Colors.white),
-                  )
-              ),
+                "¡Adquiere tus boletos!",
+                maxLines: 2,
+                overflow: TextOverflow.clip,
+                style: TextStyle(fontSize: 20, color: Colors.white),
+              )),
               SizedBox(height: 50),
               Text(
                 "Vive la mejor experiencia con tus artistas favoritos, reserva aquí tus entradas para los mejores eventos.",
@@ -52,7 +51,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     Navigator.pushNamed(context, AppRoutes.ROUTE_Home);
                   },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size.fromHeight(50),
+                      minimumSize: Size.fromHeight(50),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30)),
                       elevation: 0,
@@ -63,7 +62,9 @@ class _SplashScreenState extends State<SplashScreen> {
                   child: Center(
                     child: Text(
                       "Entrar",
-                      style: TextStyle(color: Colors.black87,),
+                      style: TextStyle(
+                        color: Colors.black87,
+                      ),
                     ),
                   ))
             ],

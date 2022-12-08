@@ -1,0 +1,206 @@
+{
+  "project_info": {
+    "project_number": "117143108807",
+    "project_id": "proyectofb-156ee",
+    "storage_bucket": "proyectofb-156ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117143108807:android:9c956d2b31cc33356ed2e2",
+        "android_client_info": {
+          "package_name": "com.example.ejercicio_crud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117143108807-0q42pa132prua013gtkgrsvu2sh060ld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBks7tRyfjaeMf3U7guwwMVyEzY6m26Stc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117143108807-0q42pa132prua013gtkgrsvu2sh060ld.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "117143108807-0lgomaok8qath162vg4bg83kbkk58pmi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ejercicioCrud"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117143108807:android:c264b60f724401d06ed2e2",
+        "android_client_info": {
+          "package_name": "com.example.proyecto_fdm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117143108807-0q42pa132prua013gtkgrsvu2sh060ld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBks7tRyfjaeMf3U7guwwMVyEzY6m26Stc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117143108807-0q42pa132prua013gtkgrsvu2sh060ld.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "117143108807-0lgomaok8qath162vg4bg83kbkk58pmi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ejercicioCrud"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117143108807:android:3ff8e7dd1cc32dd26ed2e2",
+        "android_client_info": {
+          "package_name": "com.example.prueba0"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117143108807-0q42pa132prua013gtkgrsvu2sh060ld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBks7tRyfjaeMf3U7guwwMVyEzY6m26Stc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117143108807-0q42pa132prua013gtkgrsvu2sh060ld.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "117143108807-0lgomaok8qath162vg4bg83kbkk58pmi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ejercicioCrud"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117143108807:android:02397524ddf16b176ed2e2",
+        "android_client_info": {
+          "package_name": "com.example.prueba_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117143108807-m6fqnnu46fbl186tbn2dtq4o26e320lm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.prueba_firebase",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "117143108807-0q42pa132prua013gtkgrsvu2sh060ld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBks7tRyfjaeMf3U7guwwMVyEzY6m26Stc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117143108807-0q42pa132prua013gtkgrsvu2sh060ld.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "117143108807-0lgomaok8qath162vg4bg83kbkk58pmi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ejercicioCrud"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117143108807:android:716c05eacd29ff726ed2e2",
+        "android_client_info": {
+          "package_name": "com.flutterflow.proyectofdm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117143108807-0ci9c0i4kq2lgisb0k00bsnfe6kbdbto.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flutterflow.proyectofdm",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "117143108807-0q42pa132prua013gtkgrsvu2sh060ld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBks7tRyfjaeMf3U7guwwMVyEzY6m26Stc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117143108807-0q42pa132prua013gtkgrsvu2sh060ld.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "117143108807-0lgomaok8qath162vg4bg83kbkk58pmi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ejercicioCrud"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

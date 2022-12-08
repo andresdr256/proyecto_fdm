@@ -1,12 +1,12 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 
-class ViewDetails extends StatefulWidget {
+class Therion extends StatefulWidget {
   @override
-  _ViewDetailsState createState() => _ViewDetailsState();
+  _TherionState createState() => _TherionState();
 }
 
-class _ViewDetailsState extends State<ViewDetails> {
+class _TherionState extends State<Therion> {
   int numberPackage = 0;
 
   removePackage() {
@@ -28,12 +28,6 @@ class _ViewDetailsState extends State<ViewDetails> {
     Size size = MediaQuery.of(context).size;
     ThemeData appTheme = Theme.of(context);
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        elevation: 0,
-        child: Icon(Icons.menu),
-        onPressed: () {},
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
       body: Stack(
         children: [
           // Imagen de concierto
@@ -45,7 +39,7 @@ class _ViewDetailsState extends State<ViewDetails> {
               height: size.height * 0.7,
               color: Colors.grey,
               child: Image(
-                image: AssetImage('assets/image/pic1.jpg'),
+                image: AssetImage('assets/image/pic2.jpg'),
                 fit: BoxFit.cover,
               ),
             ),
@@ -63,7 +57,7 @@ class _ViewDetailsState extends State<ViewDetails> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Chris Rock World Tour", style: appTheme.textTheme.headline2),
+                    Text("Therion", style: appTheme.textTheme.headline2),
                     SizedBox(height: 4),
                     Row(children: [
                       Icon(
@@ -72,7 +66,7 @@ class _ViewDetailsState extends State<ViewDetails> {
                       ),
                       SizedBox(width: 12),
                       Text(
-                        "Estadio Azteca, México",
+                        "Auditorio BB, Edo. Mex",
                         style: appTheme.textTheme.caption,
                       )
                     ]),
@@ -112,19 +106,19 @@ class _ViewDetailsState extends State<ViewDetails> {
                     ),
                     SizedBox(height: 12),
                     Text(
-                      "Chris Rock por primera vez en México con su World Tour 2022",
+                      "La mítica banda de heavy metal Therion en concierto.",
                       maxLines: 4,
                       overflow: TextOverflow.fade,
                       style: appTheme.textTheme.bodyText1,
                     ),
-                    SizedBox(height: size.height*0.02),
+                    SizedBox(height: size.height * 0.02),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         RichText(
                           text: TextSpan(children: [
                             TextSpan(
-                                text: "\$1,200.00",
+                                text: "\$1,120.00",
                                 style: TextStyle(
                                     color: appTheme.accentColor,
                                     fontSize: 32,
